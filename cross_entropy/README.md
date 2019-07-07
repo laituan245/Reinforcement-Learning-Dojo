@@ -7,6 +7,7 @@ The steps of the cross-entropy method are:
 4. Train on the remaining  "elite" episodes using observations as the input and issued actions as the desired output.
 5. Repeat from step 1 until we become satisfied with the result.
 
-Results:
-+ Initially: [Video](https://github.com/laituan245/RL-Practice/tree/master/cartpole_v1/video/iter_1.mp4)
-+ After training for 100 iterations: [Video](https://github.com/laituan245/RL-Practice/tree/master/cartpole_v1/video/iter_100.mp4)
+Demo:
+<p align="center">
+  <img src="https://github.com/laituan245/Reinforcement-Learning-Dojo/blob/master/cross_entropy/demo.gif">
+</p>
