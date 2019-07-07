@@ -22,7 +22,7 @@ class PolicyNetwork(nn.Module):
     def sample_action(self, obs):
         x = FloatTensor(obs)
         x = x.unsqueeze(0)
-        probs = torch.softmax(self.forward(x), dim=1)
+        probs = F.softmax(self.forward(x), dim=1)
         probs = list(probs.squeeze().data.numpy())
         probs[1] = 1.0 - probs[0] # Avoiding error by numerical issue
         return np.random.choice(2, 1, p=probs)[0]
